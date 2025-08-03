@@ -1,25 +1,26 @@
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-export default function Header() {
+export default function Header({ setOpenCart , setShowLogin}) {
     return (
         <>
         <nav className="p-4 font-[Helvetica] text-black h-[90px] bg-stone-200 ">
                 <ul className="flex items-center pl-12 pr-8 ">
                   
                   <li className="ml-8"><a href="#" className=" hover:text-yellow-300 text-sm tracking-wide">HOME</a></li>
-                  <li className="ml-8"><a href="#" className=" hover:text-yellow-300 text-sm tracking-wide">ABOUT</a></li>
-                  <li className="ml-8"><a href="#" className=" hover:text-yellow-300 text-sm tracking-wide">PREVIEW</a></li>
+                  <li className="ml-8"><a href="#video" className=" hover:text-yellow-300 text-sm tracking-wide">ABOUT</a></li>
+                  <li className="ml-8"><a href="#Product" className=" hover:text-yellow-300 text-sm tracking-wide">PRODUCTS</a></li>
         
                   <img src = "https://thehouseofrare.com/cdn/shop/files/Frame_41820_250x.png?v=1720342909" alt = "logo"
                   className='h-[60px] w-[90px] ml-80'></img>
 
                   <li className="flex-1"></li>
         
-                  <li className="mr-6"><a href="#" className="text-black hover:text-yellow-300 text-sm tracking-wide ">LOGIN</a></li>
+                  <li className="mr-6"><a href="#"  onClick={() => setShowLogin(true)} className="text-black hover:text-yellow-300 text-sm tracking-wide ">LOGIN</a></li>
         
-                  <li className="flex items-center text-BLACK hover:text-yellow-300 cursor-pointer text-sm tracking-wide">
-                    <ShoppingCartIcon className="mr-1 text-stone-700" />
-                    <span>CART</span>
-                  </li>
+                <li className="flex items-center text-BLACK hover:text-yellow-300 cursor-pointer text-sm tracking-wide"
+                onClick={() => setOpenCart(true)}>
+                <ShoppingCartIcon className="mr-1 text-stone-700" />
+                <span>CART</span>
+                </li>
                 </ul>
               </nav>
               <div className='flex-row justify-center mb-10'>

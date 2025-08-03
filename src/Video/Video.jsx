@@ -12,7 +12,7 @@ export default function Video({ src }) {
     };
 
     return (
-        <div className="mt-10 ml-10">
+        <div id = "video" className="mt-10 ml-10">
             <div
                 className="h-[350px] w-[190px] border overflow-hidden border-none "
                 onMouseEnter={handleMouseEnter}

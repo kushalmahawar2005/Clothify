@@ -31,3 +31,18 @@ body {
     display: none; 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* We use it to remove the spinner (arrow button) for input (type - number) */
+.no-spinner::-webkit-inner-spin-button, 
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+}
