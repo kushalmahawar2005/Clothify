@@ -1,12 +1,36 @@
-# React + Vite
+🛍️ Clothify – Modern Clothing E-Commerce Website
+Clothify is a sleek, responsive, and fully functional e-commerce web application for clothing and fashion products. Built using React.js, Tailwind CSS, and modern frontend practices, it features dynamic product listings, shopping cart functionality, and a smooth UI for a seamless shopping experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔧 Tech Stack
+Frontend: React.js, Tailwind CSS
 
-Currently, two official plugins are available:
+State Management: useState, useEffect, useRef (for dynamic interactions)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Routing: React Router DOM
 
-## Expanding the ESLint configuration
+Animations & Effects: Framer Motion (if used), CSS transitions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cart UI: Slide-in drawer/cart panel from left on icon click
+
+Responsive Design: Mobile, Tablet, and Desktop compatible
+
+✨ Features
+🛒 Add to Cart with animated drawer
+
+👕 Category-wise product display
+
+🔍 Product details with images and descriptions
+
+💡 Clean UI & smooth hover effects
+
+💬 Easy-to-understand codebase for beginners
+
+📸 Preview
+
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/e8e35488-a147-45ca-993d-f46b60e4add5" />
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/10973ce4-db85-49d0-ae8d-eb52d05c9e39" />
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/2154c177-e268-4cd6-8507-495d5bf53c94" />
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/444130fb-ae89-4e85-9f66-bdb67fa2a2e3" />
+
+
+
