@@ -36,7 +36,7 @@ const Item = [
 ]
 
 
-export default function Productjs() {
+export default function Productjs({addToCart}) {
     return(
         <>
          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
@@ -47,6 +47,7 @@ export default function Productjs() {
                     title={item.title}
                     des={item.des}
                     price={item.price}
+                    onAddToCart = {() => addToCart(item)}
                 />
             ))}
         </div>

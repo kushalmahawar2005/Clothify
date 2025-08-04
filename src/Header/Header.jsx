@@ -14,7 +14,7 @@ export default function Header({ setOpenCart , setShowLogin}) {
 
                   <li className="flex-1"></li>
         
-                  <li className="mr-6"><a href="#"  onClick={() => setShowLogin(true)} className="text-black hover:text-yellow-300 text-sm tracking-wide ">LOGIN</a></li>
+                  <li className="mr-6"><a href="#"  onMouseEnter={() => setShowLogin(true) } className="text-black hover:text-yellow-300 text-sm tracking-wide ">LOGIN</a></li>
         
                 <li className="flex items-center text-BLACK hover:text-yellow-300 cursor-pointer text-sm tracking-wide"
                 onClick={() => setOpenCart(true)}>

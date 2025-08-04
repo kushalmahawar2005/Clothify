@@ -1,4 +1,4 @@
-export default function Product({src , title , des , price}) {
+export default function Product({src , title , des , price ,  onAddToCart}) {
     return (
         
         <div id = "Product" className="mb-10">
@@ -10,7 +10,7 @@ export default function Product({src , title , des , price}) {
                 <p className="data1">{des}</p>
                 <div className="flex justify-between">
                 <p className="data mt-2  ">{price}</p>
-                 <button className="border text-[10px] w-[100px] mr-14 cursor-pointer">Add To Cart</button>
+                 <button onClick={onAddToCart} className="border text-[10px] w-[100px] mr-14 cursor-pointer">Add To Cart</button>
                  </div>
                 </div>
            
