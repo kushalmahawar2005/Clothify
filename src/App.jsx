@@ -1,32 +1,38 @@
-import { useState } from 'react'
-import './index.css'
-import Header from './Header/Header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './index.css';
 import Layout from './Cart/Layout';
-import Productjs from './Products/Productjs';
 import VideoSec from './Video/VideoSec';
 import VideoCardCon from './VideoCard/VideoCardCon';
 import Footer from './Footer/Footer';
+import ProductPage from './ProductPage/ProductPage';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   return (
-    <>
-     
-      <Layout />
-      
-      
-
-    <section>
-      <VideoSec />
-      <VideoCardCon />
-      </section>
-      <br/>
-      <Footer/>
-      
-
-      
-      
-    </>
-  )
+    <Router>
+      <>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Layout />
+                <section>
+                  <VideoSec />
+                  <VideoCardCon />
+                </section>
+                <br />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/product" element={<ProductPage/>} />
+        </Routes>
+      </>
+    </Router>
+  );
 }
 
-export default App
+export default App;
