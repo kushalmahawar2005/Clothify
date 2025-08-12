@@ -25,7 +25,7 @@ export default function ProductPage({ showImages }) {
 
       <div>
        
-        <div className='flex justify-center text-sm h-[44px] bg-stone-800'>
+        <div className='flex justify-center text-sm h-[44px] bg-stone-800' id = "Product">
           <ul className='flex gap-16 mt-3 text-white font-semibold cursor-pointer'>
             <li
               className={`hover:underline tracking-wide ${activeTab === 'Men' ? 'underline' : ''}`}

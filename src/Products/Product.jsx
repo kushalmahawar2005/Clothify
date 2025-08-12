@@ -1,7 +1,7 @@
 export default function Product({src , title , des , price ,  onAddToCart}) {
     return (
         
-        <div id = "Product" className="mb-10">
+        <div  className="mb-10">
             <div className="flex justify-center">
                 <img src = {src} alt = "img" className="h-[300px] w-[250px] "/>
             </div>

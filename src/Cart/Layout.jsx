@@ -3,12 +3,14 @@ import Header from "../Header/Header";
 import Cart from "./Cart";
 import Login from "../Login/Login"; 
 import Productjs from "../Products/Productjs";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Layout() {
   const [openCart, setOpenCart] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [cartItems, setCartItem] = useState([]);
+   const navigate = useNavigate();
 
   const addToCart = (product) => {
   const existingProduct = cartItems.find((item) => item.title === product.title);
@@ -60,7 +62,7 @@ const decreaseQty = (title) => {
              <Productjs addToCart={addToCart} /> 
            
             <div className='flex justify-center data1'>
-             <button className='border h-[30px] w-[100px] cursor-pointer'>VIEW MORE</button>
+             <button className='border h-[30px] w-[100px] cursor-pointer'   onClick={() => navigate("/product")} >VIEW MORE</button>
              </div>
             </section>
      

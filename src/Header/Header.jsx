@@ -5,9 +5,9 @@ export default function Header({ setOpenCart , setShowLogin , showImages = true}
         <nav className="p-4 font-[Helvetica] text-black h-[90px] bg-stone-200 " id = "Home">
                 <ul className="flex items-center pl-12 pr-8 ">
                   
-                  <li className="ml-8"><a href="#Home" className=" hover:text-yellow-300 text-sm tracking-wide">HOME</a></li>
+                  <li className="ml-8"><a href="/" className=" hover:text-yellow-300 text-sm tracking-wide">HOME</a></li>
                   <li className="ml-8"><a href="#video" className=" hover:text-yellow-300 text-sm tracking-wide">ABOUT</a></li>
-                  <li className="ml-8"><a href="#Product" className=" hover:text-yellow-300 text-sm tracking-wide">PRODUCTS</a></li>
+                  <li className="ml-8"><a href="Product" className=" hover:text-yellow-300 text-sm tracking-wide">PRODUCTS</a></li>
         
                   <img src = "https://thehouseofrare.com/cdn/shop/files/Frame_41820_250x.png?v=1720342909" alt = "logo"
                   className='h-[60px] w-[90px] ml-80'></img>
