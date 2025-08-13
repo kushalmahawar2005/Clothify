@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: clothify-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: server
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_SERVICE_SID
+        sync: false
+
+  - type: web
+    name: clothify-frontend
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false
