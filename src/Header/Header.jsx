@@ -7,7 +7,7 @@ export default function Header({ setOpenCart , setShowLogin , showImages = true}
                   
                   <li className="ml-8"><a href="/" className=" hover:text-yellow-300 text-sm tracking-wide">HOME</a></li>
                   <li className="ml-8"><a href="#video" className=" hover:text-yellow-300 text-sm tracking-wide">ABOUT</a></li>
-                  <li className="ml-8"><a href="Product" className=" hover:text-yellow-300 text-sm tracking-wide">PRODUCTS</a></li>
+                  <li className="ml-8"><a href="product" className=" hover:text-yellow-300 text-sm tracking-wide">PRODUCTS</a></li>
         
                   <img src = "https://thehouseofrare.com/cdn/shop/files/Frame_41820_250x.png?v=1720342909" alt = "logo"
                   className='h-[60px] w-[90px] ml-80'></img>
