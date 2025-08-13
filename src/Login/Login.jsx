@@ -5,6 +5,9 @@ export default function Login({ onClose }) {
   const [otp, setOtp] = useState("");
   const [step, setStep] = useState(1); // 1 = mobile input, 2 = OTP input
 
+  // Get API URL from environment or use localhost for development
+  const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
   // Send OTP API call
   const sendOtp = async () => {
     if (!mobile || mobile.length !== 10) {
@@ -12,7 +15,7 @@ export default function Login({ onClose }) {
       return;
     }
     try {
-      const res = await fetch("http://localhost:5000/send-otp", {
+      const res = await fetch(`${API_BASE_URL}/send-otp`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone: `+91${mobile}` })
@@ -24,14 +27,15 @@ export default function Login({ onClose }) {
         alert(data.message || "Failed to send OTP");
       }
     } catch (err) {
-      alert("Error sending OTP");
+      console.error("Error sending OTP:", err);
+      alert("Error sending OTP. Please check your connection.");
     }
   };
 
   // Verify OTP API call
   const verifyOtp = async () => {
     try {
-      const res = await fetch("http://localhost:5000/verify-otp", {
+      const res = await fetch(`${API_BASE_URL}/verify-otp`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone: `+91${mobile}`, otp })
@@ -44,7 +48,8 @@ export default function Login({ onClose }) {
         alert("Invalid OTP");
       }
     } catch (err) {
-      alert("Error verifying OTP");
+      console.error("Error verifying OTP:", err);
+      alert("Error verifying OTP. Please check your connection.");
     }
   };
 
