@@ -54,19 +54,15 @@ const decreaseQty = (title) => {
   return (
     <>
       <Header setOpenCart={setOpenCart} setShowLogin={setShowLogin} />
-      <section className='mt-5'>
-            <h3 className='ml-15 text-sm tracking-wide font-semibold hover:underline cursor-pointer'>PRODUCTS</h3>
-            <br></br>
-            <hr className='border border-[#b1aeae]'></hr>
-            <br/>
-             <Productjs addToCart={addToCart} /> 
-           
-            <div className='flex justify-center data1'>
-             <button className='border h-[30px] w-[100px] cursor-pointer'   onClick={() => navigate("/product")} >VIEW MORE</button>
-             </div>
-            </section>
-     
-      <Cart openCart={openCart} setOpenCart={setOpenCart} cartItems={cartItems} increaseQty={increaseQty} decreaseQty={decreaseQty}/>
+      <section className="mt-4 sm:mt-5 px-2 sm:px-8 w-full">
+        <h3 className="ml-2 sm:ml-15 text-xs sm:text-sm tracking-wide font-semibold hover:underline cursor-pointer">PRODUCTS</h3>
+        <hr className="border border-[#b1aeae] my-2" />
+        <Productjs addToCart={addToCart} />
+        <div className="flex justify-center mt-4">
+          <button className="border rounded px-3 py-1 text-xs sm:text-sm w-auto min-w-[70px] max-w-[100px] h-auto cursor-pointer hover:bg-gray-100 transition" onClick={() => navigate("/product")}>VIEW MORE</button>
+        </div>
+      </section>
+      <Cart openCart={openCart} setOpenCart={setOpenCart} cartItems={cartItems} increaseQty={increaseQty} decreaseQty={decreaseQty} />
       {showLogin && <Login onClose={() => setShowLogin(false)} />}
     </>
   );

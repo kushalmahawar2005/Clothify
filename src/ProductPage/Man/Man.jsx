@@ -11,7 +11,7 @@ export default function Man({ src, title, des, price }) {
                     <p className="data1">{des}</p>
                     <div className="flex justify-between">
                         <p className="data mt-2  ">{price}</p>
-                        <button className="border text-[10px] w-[100px] mr-14 cursor-pointer">Add To Cart</button>
+                        <button className="border rounded px-3 py-1 text-xs sm:text-sm min-w-[70px] max-w-[100px] h-auto cursor-pointer hover:bg-gray-100 transition">Add To Cart</button>
                     </div>
                 </div>
 

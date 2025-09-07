@@ -32,14 +32,16 @@ let Item = [
 
 export default function VideoCardCon() {
   return (
-    <div className="flex gap-2">
+    <div className="flex overflow-x-auto flex-nowrap gap-4 py-2 px-2 sm:grid sm:grid-cols-3 sm:gap-6 sm:overflow-x-visible">
       {Item.map((item, idx) => (
-        <VideoCart
-          key={idx}
-          src={item.src}
-          dec={item.dec}
-          price={item.price}
-        />
+        <div className="min-w-[150px] sm:min-w-0 flex-shrink-0">
+          <VideoCart
+            key={idx}
+            src={item.src}
+            dec={item.dec}
+            price={item.price}
+          />
+        </div>
       ))}
     </div>
   );

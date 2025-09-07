@@ -12,14 +12,14 @@ import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <Router>
-      <>
+      <div className="w-full min-h-screen">
         <Routes>
           <Route
             path="/"
             element={
               <>
                 <Layout />
-                <section>
+                <section className="w-full px-2 sm:px-0">
                   <VideoSec />
                   <VideoCardCon />
                 </section>
@@ -28,9 +28,9 @@ function App() {
               </>
             }
           />
-          <Route path="/product" element={<ProductPage/>} />
+          <Route path="/product" element={<ProductPage />} />
         </Routes>
-      </>
+      </div>
     </Router>
   );
 }
