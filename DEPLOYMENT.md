@@ -7,7 +7,7 @@
 1. **Create a new Web Service on Render:**
    - Go to [render.com](https://render.com)
    - Create a new Web Service
-   - Connect your GitHub repository
+   - Connect your GitHub repository 
    - Set the root directory to `server/`
 
 2. **Configure the service:**
