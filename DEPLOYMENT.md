@@ -12,7 +12,7 @@
 
 2. **Configure the service:**
    - **Build Command:** `npm install`
-   - **Start Command:** `npm start`
+   - **Start Command:** `npm start` 
    - **Environment:** Node
 
 3. **Add Environment Variables:**
